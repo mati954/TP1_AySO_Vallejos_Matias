@@ -1,0 +1,207 @@
+pwd
+ls -l
+mkdir Clase4
+ls -l
+cd Clase4
+cat <<FIN > archivo1.tex
+Linea1
+Linea2
+Linea3
+Linea4
+Linea5
+FIN
+
+ls -l
+cat archivo1.tex 
+cat <<FIN > archivo2.tex
+Linea6
+Linea7
+FIN
+
+ls -l
+cat *.txt
+cat *.tex
+cat archivo1.tex archivo2.tex >archivo3.txt
+ls -l
+cat archivo3.txt
+grep 4 archivo3.txt
+tree
+apt install tree
+sudo  apt install tree
+tree
+sudo apt update
+sudo apt install tree
+tree
+mkdir practica
+ls -l
+cd practica
+touch practica1.txt
+ls -l
+cp practica1.txt practica2.txt
+ls -l
+rm practica1.txt 
+ls -l
+mv practica2.txt :~/Clase4/
+ls -l
+mv practica2.txt  /home/vagrant/Clase4/
+ls -
+cd ..
+ls -l
+rmdir practica/
+ls -l
+exit
+pwd
+ls -l
+mkdir clase5
+ls -l
+cd clase5
+pwd
+ls -l
+mkdir facturas pedidos
+ls -l
+tree
+mkdir -p cliente/{facturas,pedidos}
+tree
+mkdir -p {cliente,provedores}/{facturas,pedidos}
+tree
+mkdir -p contacto/{cliente,provedores}/{facturas,pedidos}
+tree
+mkdir -p vallejos1/contacto/{cliente,provedores}/{facturas,pedidos} 
+tree
+mkdir -p vallejos1/{mama/hijo{1,3}}/{papa/hijado,hijo{1,3}}
+tree
+rm -r {mama
+rm -r ~/mama
+ls -l
+rm -r vallejos1
+ls -l
+tree
+mkdir -p vallejos/{mama/hijos{1,3},papa/ahijado,hijo{1,3}}}
+tree
+rm -r vallejos
+tree
+mkdir -p vallejos/{mama/hijos{1,3},papa/ahijado,hijo{1,3}}
+tree
+rm -r vallejos
+mkdir -p vallejos/{mama/hijos{1..3},papa/{ahijado,hijo{1,3}}}
+tree
+mkdir  ~/prueba
+cd ..
+ls -l
+cd clase5
+mkdir /home/vagrant/prueba2
+ls -l /home/vagrant/
+id
+cat /etc/passwd
+grep -ivagrant /etc/passwd
+grep -i vagrant /etc/passwd
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo su 
+sudo groupadd alumno
+cat /etc/group
+useradd -m -s /bin/bash -c “alumno pepe ” -G alumno pepe
+useradd -m -s /bin/bash -c “alumno pepe ” -G alumnos pepe
+useradd -m -s /bin/bash -c “alumno pepe ” -G alumno pepe
+useradd -m -s /bin/bash -c “alumno pepe ” -G alumno pepeuseradd -m -s /bin/bash -c “alumno pepe ” -G alumno pepe
+useradd -m -s /bin/bash -c “alumno pepe ” -G alumno pepe
+sudo useradd -m -s /bin/bash -c "alumno pepe" -G alumno pepe
+grep pepe /etc/passwd
+sudo grep pepe /etc/passwd
+sudo grep pepe /etc/ group
+sudo grep pepe /etc/group
+ls -l /home
+sudo passwd pepe
+su pepe 
+su - pepe 
+ls -l /home/pepe
+ls -l
+chown pepe:pepe cliente
+sudo chown pepe:pepe cliente
+ls -l
+sudo chown vagrant:vagrant cliente
+ls -l
+cd /home/pepe
+su - pepe
+sudo chown vagrant:vagrant /home/pepe/pepe.txt
+sudo ls - /home/pepe
+sudo ls -l /home/pepe
+su - pepe
+touch practica1.txt
+touch practica2.txt
+ls -l
+chmod 600 practica.txt 
+chmod 600 practica1.txt 
+ls -l
+chmod 444 practica2.txt
+ls -l
+echo "hola" >> practica2.txt  
+sudo echo "hola" >> practica2.txt  
+exit
+ssh-keygen -t ed25519
+cat $home/.ssh/*.pub
+cat $HOME/.ssh/*.pub
+ssh -T git@github.com
+cd
+mkdir repogit
+cd repogit
+ls -la
+git clone git@github.com:mati954/TP1_AySO_Vallejos_Matias.git
+cd TP1<tab>
+cd TP1<Tab>
+cd TP1_AySO_Vallejos_Matias/
+PWD
+pwd
+ls-l
+ls -l
+cat/etc/os-release
+cat /etc/os-realease
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release 
+grep -i HOME_url /etc/os-release 
+grep -i home_url /etc/os-release > datos_url.txt
+cat datos_url.txt
+whoami
+echo echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario-txt
+cat datos_usuario.txt
+git add
+git config --global user.email "<matyvallejosdmc@gmail.com>"
+git config --global user.name "mati954"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git add .
+git config --global user.email "matyvallejosdmc@gmail.com"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo información de CPU"
+cat <<EOF >> README.md
+alumno: matias vallejos sanabria 
+division : 212
+turno :tarde
+EOF
+
+cat README.md
+gir add README.md datos_usuario.txt
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p ~/materia{1,2}/uni{1,2,3}
+ls -R ~/materia1 ~/materia2
+tree ~/materia1 ~/materia2
+cat <<'EOF' > script_dir.sh
+#!/bin/bash
+mkdir -p ~/materia{1,2}/uni{1,2,3}
+EOF
+
+chmod +x script_dir.sh
+ls -l script_dir.sh
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
